@@ -1,8 +1,8 @@
-/*
----------------------------------------------------------------------
-GESTION DU BOUTON QUI FERME LA VIDEO ET L'AUDIO CI CELUI CI EST ACTIF
----------------------------------------------------------------------
-*/
+
+//---------------------------------------------------------------------
+//GESTION DU BOUTON QUI FERME LA VIDEO ET L'AUDIO CI CELUI CI EST ACTIF
+//---------------------------------------------------------------------
+//
 // On récupère dans une constante l'élément sur lequel on va cliquer
 const ELEMENT__close = document.getElementById('cross');
 console.log("Je récupère l'élément cliquable :", ELEMENT__close);
@@ -16,6 +16,9 @@ ELEMENT__close.addEventListener("click", () => {
 
     var baliseAudio = document.getElementById("video");
     baliseAudio.pause();
+    var baliseAudio = document.getElementById("audio_cart");
+    baliseAudio.play();
+
 });
 
 /*
@@ -142,23 +145,59 @@ Récuparation des informations des objets à cibler
         };
 
 
-/*
-Arrivé à 400 pixels du Top on modifie la classe de l'objet pour le faire apparaitre
-Sur une fenetre qui fait une hauteur de 500 pixels 
-
-*/
-
-
-
-
 })
 
 
 
 /*
-Arrivé à 400 pixels du Top on modifie la classe de l'objet pour le faire apparaitre
-Sur une fenetre qui fait une hauteur de 500 pixels 
-
+---------------------------------------------------------------------
+GESTION DU MENU BURGER
+---------------------------------------------------------------------
 */
 
 
+var ELEMENT__burger = document.getElementById("btn__burger");
+        console.log("J'ai ciblé l'élément : ",ELEMENT__burger);
+
+        ELEMENT__burger.addEventListener("click", () => {
+            console.log("Ahahaaaaa ! tu as clické saloupiot !");
+            
+
+            const ID__menu = document.getElementById("menu__id");
+            ID__menu.classList.add("burgerok");
+            console.log(ID__menu);
+
+            // On vire le bouton burger
+            ELEMENT__burger.hidden;
+            var baliseAudio = document.getElementById("swoosh");
+            baliseAudio.play();
+        })
+
+var ELEMENT__cross = document.getElementById("menu__cross");
+        console.log("J'ai ciblé l'élément : ",ELEMENT__cross);
+
+        ELEMENT__cross.addEventListener("click", () => {
+            console.log("Ahahaaaaa ! tu as REclické saloupiot !");
+            
+
+            const ID__menu = document.getElementById("menu__id");
+            ID__menu.classList.remove("burgerok");
+            console.log(ID__menu);
+            var baliseAudio = document.getElementById("swoosh");
+            baliseAudio.play();
+        })
+
+
+
+//
+//
+//
+const ELEMENT__photo = document.querySelector(".photo");
+console.log(ELEMENT__photo);
+
+ELEMENT__photo.addEventListener("click", () => {
+    console.log("Mouahahahahahahah !!!!");
+    var baliseAudio = document.getElementById("laugh");
+    baliseAudio.play();
+
+})

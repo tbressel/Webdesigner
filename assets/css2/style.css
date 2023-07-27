@@ -79,6 +79,7 @@ main {
     text-transform: uppercase;
 }
 .photo {
+    cursor: pointer;
     animation-name: coucou;
     animation-delay: 1s;
     animation-duration: 1.5s;

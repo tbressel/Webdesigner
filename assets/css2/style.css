@@ -46,10 +46,20 @@ main {
     position: relative;
     z-index: -1;
 }
+.apparition {
+    animation-name: apparition;
+    animation-delay: 500ms;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.title2  {
+    opacity: 0;
+}
 .title2 h3 {
     text-transform:capitalize;
     font-size: 34px;
     font-weight: 700;
+   
 }
 .subtitle2 h4 {
     margin-top: 150px;

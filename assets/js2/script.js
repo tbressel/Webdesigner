@@ -98,7 +98,7 @@ Récuparation des informations des objets à cibler
     
  /* 1ère étape  : définir toutes les variables pour le calcule */
 
-    const ELEMENT__objet = document.getElementById("scrollFX");
+    const ELEMENT__objet = document.getElementById("scrollFX1");
             console.log("L'élément à cibler est :", ELEMENT__objet);
 
     let TOP__object = ELEMENT__objet.getBoundingClientRect().top.toFixed(); 
@@ -152,3 +152,13 @@ Sur une fenetre qui fait une hauteur de 500 pixels
 
 
 })
+
+
+
+/*
+Arrivé à 400 pixels du Top on modifie la classe de l'objet pour le faire apparaitre
+Sur une fenetre qui fait une hauteur de 500 pixels 
+
+*/
+
+

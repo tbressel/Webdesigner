@@ -12,20 +12,35 @@
     font-family: 'montserrat';
     src: url('../fonts/montserrat.woff2');
 }
-
+@font-face {
+    font-family: 'poppins400';
+    src: url("../fonts/poppins400.woff2");
+}
+@font-face {
+    font-family: 'poppins100';
+    src: url("../fonts/poppins100.woff2");
+}
+@font-face {
+    font-family: 'poppins200';
+    src: url("../fonts/poppins200.woff2");
+}
 
 /* Définition des variables de couleur */
 :root {
     --redFFF: #FF014F;
     --whiteFFF: white;
+    --whiteCCC: #c4cfde;
+    --whiteCCCalpha: #c4cfde11;
     --greyAAA:#abb8c3;
     --grey600:#666666;
     --grey400:#444444;
     --black100:#1c1e22;
     --black200:#212529;
+    --blackalpha:#2125291b;
     --black50:#000500;
 
     --shadows-1 : 10px 10px 19px var(--black50), -10px -10px 19px var(--black200);
+    --shadows-2 : 8px 8px 6px var(--whiteCCCalpha), -10px -10px 2px var(--blackalpha);
 }
 
 /* Définition des variables générales */
@@ -48,4 +63,28 @@
 .center-h {
     margin-left: auto;
     margin-right: auto;
+}
+.shadow-black {
+    box-shadow: var(--shadows-1);
+}
+.shadow-white {
+    box-shadow: var(--shadows-2);
+}
+ul li {
+    list-style: none;
+    margin: 15px;
+}
+
+.check {
+    color: var(--whiteCCC);
+}
+.check::before {
+    content:"\ea02";
+
+}
+.nocheck {
+    color: var(--grey400);
+}
+.nocheck::before {
+    content: "\e92b";
 }

@@ -2,6 +2,7 @@
 /* Style de la barre de navigation */
 header {
     position: fixed;
+    z-index: 10;
     top:0px;
     opacity: 95%;
     width: 100%;
@@ -98,7 +99,8 @@ hr {
                     padding: 10px;
                     width: fit-content;                   
                 }
-                    .burger {
+                    .burger,
+                    .croix__menu {
                         background-color: var(--black100);
                         box-shadow: var(--shadows-1);
                         width: 50px;
@@ -111,4 +113,65 @@ hr {
                             height: 2px;
                             width: 20px;
                             margin: 5px;
-                        }   
+                        }  
+                        
+
+.menu__container {
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    background-color: var(--black100);
+    width: 350px;
+    height: 100vh;
+
+    border: red 1px solid;
+}
+.header__text {
+    color: var(--greyAAA);
+    border-bottom: 1px var(--greyAAA) solid;
+    font-size: 16px;
+    line-height: 32px;
+}
+.croix__menu div{
+    margin-top: 10px;
+}
+    .croix__menu div:nth-child(2) {
+        position: relative;
+        top: -10px;
+        transform: rotate(45deg);
+    }
+        .croix__menu div:nth-child(1) {
+            position: relative;
+            top: 2px;
+            transform: rotate(-45deg);
+        }
+
+.menu__container ul {
+    border-bottom: 1px var(--greyAAA) solid;
+    padding-bottom: 100px;
+}
+
+
+.social__icons svg {
+    position:relative;
+    border: rgb(57, 56, 56) 1px dotted;
+    width: 55px;
+    height: 55px;
+    border-radius: 10px;
+    background-color: var(--black200);
+    margin-right: 10px;
+    
+}
+
+.link a {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 27px;
+    position: relative;
+    left: -45px;
+    top:10px;
+    color: var(--greyAAA);
+    text-decoration: none;
+    text-transform: uppercase;
+}

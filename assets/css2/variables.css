@@ -1,0 +1,51 @@
+/* Définition des polices */
+@font-face {
+    font-family: 'archivoblack';
+    src: url('../fonts/archivoblack.woff2');
+}
+
+@font-face {
+    font-family: 'plaifairdisplay';
+    src: url('../fonts/playfairdisplay.woff2');
+}
+@font-face {
+    font-family: 'montserrat';
+    src: url('../fonts/montserrat.woff2');
+}
+
+
+/* Définition des variables de couleur */
+:root {
+    --redFFF: #FF014F;
+    --whiteFFF: white;
+    --greyAAA:#abb8c3;
+    --grey600:#666666;
+    --grey400:#444444;
+    --black100:#1c1e22;
+    --black200:#212529;
+    --black50:#000500;
+
+    --shadows-1 : 10px 10px 19px var(--black50), -10px -10px 19px var(--black200);
+}
+
+/* Définition des variables générales */
+.color-black200 {
+    color: var(--black200);
+}
+.color-greyAAA {
+    color: var(--greyAAA);
+}
+.color-redFFF {
+    color: var(--redFFF);
+}
+.bgcolor-black200 {
+    background-color: var(--black200);
+}
+.center-v {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.center-h {
+    margin-left: auto;
+    margin-right: auto;
+}

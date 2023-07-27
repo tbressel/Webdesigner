@@ -1,0 +1,18 @@
+
+
+
+@keyframes coucou {
+    0% {background-position-y: 367px;}
+    100% {background-position-y: 20px;}
+}
+
+@keyframes client {
+    0% {opacity: 0;
+        top:0px;
+    }
+
+    100% {opacity: 1;
+        top:40px;
+    }
+}
+

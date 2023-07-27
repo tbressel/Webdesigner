@@ -1,0 +1,86 @@
+
+.popup {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    cursor: move;
+}
+
+.off {
+    display: none;
+}
+
+.bulle {
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+    background-color: var(--redFFF);
+    color: var(--whiteFFF);
+    border-radius: 30px;
+    border-bottom-right-radius: 0px;
+    padding: 5px 15px 5px 15px;
+    left: -40px;
+    top: 100px;
+}
+video {
+    position: relative;
+    z-index:1;
+    height: 250px;
+    border-radius: 20px;
+    border: solid var(--black100) 8px;
+}
+.btn__play, .btn__sound, .btn__close {
+    position: relative;
+    z-index: 3;
+    display: inline;
+    float: right;
+    background-color: rgba(0, 0, 0, 0.219);
+    left: 25px;
+    border-radius: 30px;
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.btn__play, .btn__sound {
+    top: 50px;
+}
+.btn__close {
+    background-color: var(--black50);
+    top: 25px;
+    left:12px;
+    cursor: pointer;
+}
+
+.btn__play::before {
+    content: url('../svg/play.svg');
+    position: relative;
+    top: 6px;
+    left: 10px;
+}
+
+
+
+.btn__close::before {
+    content: url('../svg/close.svg');
+    position: relative;
+    top: 5px;
+    left: 9px;
+}
+.btn__close::after {
+    content:"";
+}
+
+
+
+.btn__sound::before {
+    content: url('../svg/sound.svg');
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+.pause {
+    display : none;
+}
+

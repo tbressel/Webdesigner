@@ -10,13 +10,13 @@
 }
 h1 {
     font-family:'archivoblack' ;
-    font-size: 35px;
+    font-size: 6vw;
     letter-spacing: -3px;
     font-weight: 400;
 }
 h2 {
     font-family: 'plaifairdisplay';
-    font-size: 35px;
+    font-size: 6vw;
     letter-spacing: -1px;
     font-weight: 100;
     color: rgb(0, 0, 0);
@@ -36,13 +36,13 @@ h5 {
 }
 h6 {
     font-family: 'plaifairdisplay';
-    font-size: 12px;
+    font-size: 1.5vw;
     font-weight: 300;
 }
 /*  Style de la section de presentation*/          
 main {
     position: relative;
-    z-index: -1;
+    z-index: 6;
     top: 90px;
 }
 .fond-top {
@@ -85,10 +85,10 @@ main {
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
     background-image: url('../img/inbio-man-model.png');
-    background-size:320px;
+    background-size: 35vw;
     background-repeat: no-repeat;
     background-position: 50%;
-    background-position-y: 400px;
+    background-position-y: 1000px;
 }
 .where {
     margin-top: 125px;

@@ -36,7 +36,13 @@ hr {
         .box__right {
            margin-right: 30px;
             justify-content: flex-end;
+            width: 50%;
         }
+        .box__right > div:nth-child(1) {
+            width: 100%;
+            align-items: center;
+        }
+
 
             .logo img {
                 height: 45px;     
@@ -197,6 +203,8 @@ nav ul {
 }
 
 @media screen and (min-width:1200px) {
+
+
 
     .navbar{
         font-size: 14px;

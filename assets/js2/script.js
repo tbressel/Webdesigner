@@ -56,7 +56,7 @@ GESTION DU BOUTON PLAY QUI PERMET DE LIRE LA VIDEO
 ---------------------------------------------------------------------
 */
 const ELEMENT__play = document.getElementById("btn__play");
-console.log("ELEMENT__play");
+console.log(ELEMENT__play);
 
 
 ELEMENT__play.addEventListener("click", () => {
@@ -110,6 +110,7 @@ Récuparation des informations des objets à cibler
             console.log("La valeur TOP__object est de type : ",typeof(TOP__object));
             TOP__object = JSON.parse(TOP__object);
             console.log("Après transformation la valeur TOP__object est de type : ",typeof(TOP__object));
+            console.log(TOP__object);
             console.log('_____________________________________________');         
             
 
@@ -196,7 +197,7 @@ const ELEMENT__photo = document.querySelector(".photo");
 console.log(ELEMENT__photo);
 
 ELEMENT__photo.addEventListener("click", () => {
-    console.log("Mouahahahahahahah !!!!");
+    console.log("Mouahahahahahahah !!!!                                                                                                                  ");
     var baliseAudio = document.getElementById("laugh");
     baliseAudio.play();
 

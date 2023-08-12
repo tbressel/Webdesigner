@@ -15,6 +15,7 @@ header {
 svg {
     fill: var(--greyAAA);
     width: auto;
+    padding: 15px;
 }
 
 hr {
@@ -71,6 +72,7 @@ hr {
                     position: relative;
                     top:2px;
                     left: 7px;
+                    padding: 0;
                 }
                 .cart__counter {
                     position: relative;
@@ -166,7 +168,7 @@ nav {
 
 nav ul {
     border-bottom: 1px var(--greyAAA) solid;
-    padding-bottom: 100px;
+    padding-bottom: 36px;
 }
 
 
@@ -202,6 +204,16 @@ nav ul {
     display: none;
 }
 
+
+ul li {
+    margin: 5px;
+    margin-left: 15px;
+
+}
+
+#ligne1 {
+    margin-top: 20px;
+}
 @media screen and (min-width:1200px) {
 
 
